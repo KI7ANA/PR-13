@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Морской бой: обработка жестов"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сделайте свайп по кораблю"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <FrameLayout
+        android:id="@+id/gameField"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="#E3F2FD"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/shipView"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="#2196F3"
+            android:gravity="center"
+            android:text="КОРАБЛЬ"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Статус: ожидание жеста"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Свайп влево/вправо — горизонтально\nСвайп вверх/вниз — вертикально\nДолгое нажатие — очистить\nДвойное касание — сброс позиции"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+</LinearLayout>
